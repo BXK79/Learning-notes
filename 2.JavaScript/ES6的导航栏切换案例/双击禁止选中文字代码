@@ -1,0 +1,10 @@
+1. 双击事件是:  ondblclick
+
+2. 如果双击文字,会默认选定文字,此时需要双击禁止选中文字
+
+   需要添加如下代码：
+
+```
+window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+```
+
